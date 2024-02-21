@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# Папка із завданнями на лабораторні
+/Tasks/
+
+# Файл із схемою(додати після фінальних правок)
+Schema1.drawio
