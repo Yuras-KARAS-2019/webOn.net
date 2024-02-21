@@ -35,13 +35,13 @@ namespace TimeManager.DAL.Extensions
                 }
             };
 
-            var consultations = new List<ConsultationAppointment>
+            var consultations = new List<Consultation>
             {
 
             };
             builder.Entity<Student>()
                 .HasData(users);
-            builder.Entity<ConsultationAppointment>()
+            builder.Entity<Consultation>()
                 .HasData(consultations);
         }
     }

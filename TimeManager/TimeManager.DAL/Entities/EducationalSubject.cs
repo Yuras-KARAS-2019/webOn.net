@@ -7,5 +7,6 @@ public record EducationalSubject
     public string Description { get; set; }
     public DateTime CreatedDate { get; set; } = DateTime.Now;
 
-    public virtual ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
+    public virtual ICollection<TeacherSubject> TeacherSubjects { get; set; } = new List<TeacherSubject>();
+    public virtual ICollection<Consultation> Consultations { get; set; } = new List<Consultation>();
 }

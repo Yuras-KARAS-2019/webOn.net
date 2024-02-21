@@ -8,8 +8,8 @@ public record Teacher
     public string Email { get; set; }
     public string Password { get; set; }
     public DateTime CreatedDate { get; set; } = DateTime.Now;
-    public virtual ICollection<ConsultationAppointment> ConsultationAppointments { get; set; } = new List<ConsultationAppointment>();
-    public virtual ICollection<EducationalSubject> EducationalSubjects { get; set; } = new List<EducationalSubject>();
+    public virtual ICollection<TeacherSubject> TeacherSubjects { get; set; } = new List<TeacherSubject>();
+    public virtual ICollection<Consultation> Consultations { get; set; } = new List<Consultation>();
 
 }
 

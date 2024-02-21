@@ -8,7 +8,7 @@ namespace TimeManager.DAL
     {
         public virtual DbSet<Student> Students { get; private set; }
         public virtual DbSet<EducationalSubject> EducationalSubjects { get; private set; }
-        public virtual DbSet<ConsultationAppointment> ConsultationAppointments { get; private set; }
+        public virtual DbSet<Consultation> ConsultationAppointments { get; private set; }
 
         public TimeManagerContext(DbContextOptions<TimeManagerContext> options) : base(options)
         {
