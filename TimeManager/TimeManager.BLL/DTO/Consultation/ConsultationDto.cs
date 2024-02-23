@@ -2,7 +2,7 @@
 
 namespace TimeManager.BLL.DTO.Consultation;
 
-public class CousultationDto
+public class ConsultationDto
 {
     public int Id { get; set; }
     public PriorityLevel Priority { get; set; }

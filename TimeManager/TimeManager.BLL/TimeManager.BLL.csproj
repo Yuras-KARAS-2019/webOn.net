@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="DTO\Student\**" />
+    <EmbeddedResource Remove="DTO\Student\**" />
+    <None Remove="DTO\Student\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TimeManager.DAL\TimeManager.DAL.csproj" />
+  </ItemGroup>
+
 </Project>
